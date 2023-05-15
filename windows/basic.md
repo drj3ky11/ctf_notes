@@ -34,3 +34,22 @@ WinSxS 	The Windows Component Store contains a copy of all Windows components, u
 ## File permisions
 
 We can list out the NTFS permissions on a specific directory by running either icacls from within the working directory or icacls C:\Windows against a directory not currently in.
+
+The resource access level is listed after each user in the output. The possible inheritance settings are:
+
+    (CI): container inherit
+    (OI): object inherit
+    (IO): inherit only
+    (NP): do not propagate inherit
+    (I): permission inherited from parent container
+    
+Basic access permissions are as follows:
+
+    F : full access
+    D :  delete access
+    N :  no access
+    M :  modify access
+    RX :  read and execute access
+    R :  read-only access
+    W :  write-only access
+
